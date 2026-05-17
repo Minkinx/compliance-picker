@@ -1,0 +1,101 @@
+# =============================================
+# 数据合规 RSS 推送流 - 配置文件
+# =============================================
+
+proxy:
+  http: http://127.0.0.1:7890
+  https: http://127.0.0.1:7890
+  rss_proxy: false
+  bot_proxy: false
+
+# RSS Feed 源 - 聚焦数据合规/隐私保护领域
+rss:
+  - name: IAPP News
+    opml: https://iapp.org/feed/
+    enabled: true
+    tags: [国际, GDPR, 隐私, 合规]
+  - name: IAPP Daily Dashboard
+    opml: https://iapp.org/news/topic/daily-dashboard/feed/
+    enabled: true
+    tags: [国际, 隐私, 每日速递]
+  - name: EDPB News
+    opml: https://www.edpb.europa.eu/news/news.xml
+    enabled: true
+    tags: [欧盟, GDPR, 监管]
+  - name: GDPR Enforcement Tracker
+    opml: https://www.enforcementtracker.com/rss
+    enabled: true
+    tags: [欧盟, GDPR, 执法, 罚款]
+  - name: FTC Privacy & Security
+    opml: https://www.ftc.gov/news-events/contests/feed/rss/privacy-security-10
+    enabled: true
+    tags: [美国, FTC, 隐私, 执法]
+  - name: ICO News
+    opml: https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/feed/
+    enabled: true
+    tags: [英国, ICO, GDPR, 监管]
+  - name: CNIL News (EN)
+    opml: https://www.cnil.fr/en/feed.rss
+    enabled: true
+    tags: [法国, CNIL, GDPR, 监管]
+  - name: Hunton Privacy Blog
+    opml: https://www.huntonprivacyblog.com/feed/
+    enabled: true
+    tags: [国际, 隐私, 法律]
+  - name: National Law Review - Privacy
+    opml: https://www.natlawreview.com/taxonomy/term/1066/feed
+    enabled: true
+    tags: [美国, 隐私, 法律]
+  - name: Data Protection Report (A&O)
+    opml: https://www.allenovery.com/en-gb/global/news-and-insights/rss/data-protection
+    enabled: true
+    tags: [国际, GDPR, 法律]
+  - name: 中国信安标委
+    opml: https://www.tc260.org.cn/rss.xml
+    enabled: false
+    tags: [中国, 标准, 合规]
+  - name: 中国网信网
+    opml: https://www.cac.gov.cn/rss.xml
+    enabled: false
+    tags: [中国, 监管, 网络安-全]
+  - name: Data Breach Today
+    opml: https://www.databreachtoday.com/feeds/news/
+    enabled: true
+    tags: [国际, 数据泄露, 安全]
+
+# 通知机器人配置
+bot:
+  feishu:
+    enabled: true
+    key: $FEISHU_KEY
+  wecom:
+    enabled: false
+    key: $WECOM_KEY
+  dingtalk:
+    enabled: false
+    access_token: $DINGTALK_KEY
+    secret: $DINGTALK_SECRET
+  qq:
+    enabled: false
+    host: localhost
+    port: 6700
+    access_token: $QQ_KEY
+    groups: []
+    users: []
+  telegram:
+    enabled: false
+    chat_id: ""
+    token: $TELEGRAM_KEY
+  mail:
+    enabled: false
+    sender: security-bot@xxx.com
+    key: $MAIL_KEY
+    receiver: $MAIL_RECEIVER
+    smtp_host: smtp.qq.com
+    smtp_port: 465
+
+pick_bot:
+  dingtalk:
+    enabled: false
+    access_token: $PICKER_DINGTALK_KEY
+    secret: $PICKER_DINGTALK_SECRET
