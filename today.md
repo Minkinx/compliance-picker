@@ -1,17 +1,11 @@
-# 数据合规资讯日报 — 2026-11-17
+# 数据合规资讯日报 — 2026-11-18
 
-> 📡 共 2 条资讯
+> 📡 共 1 条资讯
 
 ---
 
 
-## 🌍 英国
+## 🌍 国际
 
-- [UK ICO Publishes Report on Data Protection Expectations for AI-Enabled
-Online Advertising](https://www.hunton.com/privacy-and-cybersecurity-law-blog/uk-ico-publishes-report-on-data-protection-expectations-for-ai-enabled-online-advertising) `法律` `隐私` `AI合规`
-
-
-## 🌍 全球
-
-- [California AG Announces $1.8 Million Settlement with Lyft for CCPA
-Violations](https://www.hunton.com/privacy-and-cybersecurity-law-blog/california-ag-announces-1-8-million-settlement-with-lyft-for-ccpa-violations) `法律` `隐私`
+- [CIPL Publishes Report on How AI-Powered Tools Can Improve Compliance
+Outcomes and Bolster Accountability](https://www.hunton.com/privacy-and-cybersecurity-law-blog/cipl-publishes-report-on-how-ai-powered-tools-can-improve-compliance-outcomes-and-bolster-accountability) `法律` `AI合规` `隐私`
